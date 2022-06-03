@@ -12,5 +12,6 @@ export const errorHandler = (
       .status(error.statusCode)
       .send({ errors: error.serializeErrors() });
   }
+  console.error(error);
   return res.status(500).send({ errors: [{ message: "Unknown Error" }] });
 };
