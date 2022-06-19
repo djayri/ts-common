@@ -7,7 +7,7 @@ interface Event {
 }
 
 export abstract class BaseListener<T extends Event> {
-  private client: Stan;
+  protected client: Stan;
   protected ackWait = 5 * 1000;
 
   abstract queueGroupName: string;
