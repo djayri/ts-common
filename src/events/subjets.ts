@@ -5,4 +5,7 @@ export enum Subjects {
   //Order related event
   OrderCreated = "order:created",
   OrderCancelled = "order:cancelled",
+
+  //Expiration
+  ExpirationComplete = "expiration:complete",
 }
